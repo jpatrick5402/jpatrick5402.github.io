@@ -1,0 +1,51 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+  gap: 3px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.header {
+  grid-column: 1 / span 3;
+}
+.Links > ul {
+  text-align: left;
+  font-size: 20px;
+  padding: 10px;
+}
+.Content {
+  text-align: center;
+}
+.Content > p {
+  font-size: 20px;
+}
+.Content > a {
+  font-size: 20px;
+}
+.NotAds > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.Footer > img {
+  object-fit: contain;
+  height: 300px;
+}
+.Footer {
+  grid-column: 1 / span 3;
+}
+body {
+  background: rgb(51, 51, 51);
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+:any-link {
+  color: rgb(87, 68, 46);
+}
