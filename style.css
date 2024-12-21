@@ -16,16 +16,17 @@ body {
 }
 
 .heading p {
-    background-color: black;
     margin: 10px;
 }
 
 .mainbox {
+    background-color: #454545;
     display: flex;
     margin: auto;
     max-width: 1200px;
     border-radius: 10px;
     gap: 10px;
+    margin-bottom: 10px;
 }
 
 .mainbox div,
@@ -37,7 +38,15 @@ p {
 }
 
 .mainbox img {
-    border-radius: 100px;
+    border-radius: 50px;
     border: 7px, solid, rgb(0, 0, 0);
     background-color: white;
+    width: 200px;
+    height: 200px;
+}
+
+@media (max-width: 600px) {
+    .mainbox {
+        flex-direction: column;
+    }
 }
