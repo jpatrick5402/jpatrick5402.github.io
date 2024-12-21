@@ -1,0 +1,43 @@
+body {
+    background-color: #2c2c2c;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.heading {
+    display: flex;
+    background-color: #454545;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    max-width: 1200px;
+}
+
+.heading p {
+    background-color: black;
+    margin: 10px;
+}
+
+.mainbox {
+    display: flex;
+    margin: auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.mainbox div,
+p {
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.mainbox img {
+    border-radius: 100px;
+    border: 7px, solid, rgb(0, 0, 0);
+    background-color: white;
+}
