@@ -28,7 +28,7 @@ body {
     margin: auto;
 }
 
-.mainbox {
+.line-item {
     background-color: #454545;
     display: flex;
     margin: auto;
@@ -39,13 +39,13 @@ body {
     margin-bottom: 10px;
 }
 
-.mainbox p {
+.line-item p {
     font-size: 20px;
     margin: auto 20px;
     padding: 10px;
 }
 
-.mainbox img {
+.line-item img {
     border-radius: 30px;
     border: 4px, solid, rgb(0, 0, 0);
     background-color: white;
@@ -55,7 +55,10 @@ body {
 }
 
 @media (max-width: 600px) {
-    .mainbox {
+    .line-item {
         flex-direction: column;
+    }
+    .line-item img {
+        margin: 20px auto;
     }
 }
