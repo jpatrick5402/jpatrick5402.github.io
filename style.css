@@ -5,18 +5,22 @@ body {
     text-align: center;
 }
 
-.heading {
-    display: flex;
-    background-color: #929292;
-    border-radius: 10px;
+.mainbox {
+    max-width: 1200px;
     margin: auto;
+}
+
+.heading {
+    background-color: #929292;
+    display: flex;
+    border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 35px;
-    max-width: 1200px;
 }
 
-.heading p {
+.heading-icon {
+    background-color: black;
     margin: 10px;
     border-radius: 10px;
     padding: 10px;
@@ -26,23 +30,23 @@ body {
 .title {
     text-align: center;
     margin: auto;
+    border-radius: 10px;
+    white-space: nowrap;
 }
 
 .line-item {
     background-color: #454545;
     display: flex;
-    margin: auto;
-    max-width: 1200px;
     border-radius: 10px;
     gap: 10px;
     height: fit-content;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .line-item p {
     font-size: 20px;
     margin: auto 20px;
-    padding: 10px;
 }
 
 .line-item img {
@@ -58,6 +62,11 @@ body {
     .line-item {
         flex-direction: column;
     }
+
+    .line-item p {
+        margin: 20px auto;
+    }
+
     .line-item img {
         margin: 20px auto;
     }
