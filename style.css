@@ -58,6 +58,45 @@ body {
     margin: 20px;
 }
 
+.mail-animation {
+    display: flex;
+    flex-direction: row;
+}
+
+#letter {
+    background-image: url("assets/mail.png");
+    width: 50px;
+    height: 35px;
+    animation: fall 5s linear forwards;
+    transition: 1s;
+    margin-top: 28px;
+}
+
+#mailbox {
+    background-image: url("assets/postbox.png");
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: 10px;
+    border: 4px solid #2c2c2c;
+}
+
+#mailbox:hover {
+    border: 4px solid white;
+}
+
+.mailbox-descriptor {
+    margin-left: auto;
+    margin-right: 2px;
+}
+
+@keyframes fall {
+    to {
+        transform: translatex(91vw) rotate(360deg);
+        display: none;
+    }
+}
+
 @media (max-width: 600px) {
     .line-item {
         flex-direction: column;
