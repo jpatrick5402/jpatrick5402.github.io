@@ -67,18 +67,17 @@ body {
     background-image: url("assets/mail.png");
     width: 50px;
     height: 35px;
-    animation: fall 5s linear forwards;
+    animation: fall 10s linear forwards;
     transition: 1s;
     margin-top: 28px;
 }
 
 #mailbox {
-    background-image: url("assets/postbox.png");
     height: 100px;
     width: 100px;
-    margin-left: auto;
-    margin-right: 10px;
-    border: 4px solid #2c2c2c;
+    margin: auto;
+    margin-right: 0px;
+    border: 4px solid rgba(0, 0, 0, 0);
 }
 
 #mailbox:hover {
@@ -92,7 +91,7 @@ body {
 
 @keyframes fall {
     to {
-        transform: translatex(91vw) rotate(360deg);
+        transform: translateX(calc(100vw - 200px)) rotate(360deg);
         display: none;
     }
 }
