@@ -1,0 +1,40 @@
+.mail-animation {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    max-width: 1200px;
+}
+
+#letter {
+    animation: slide 3s ease-out forwards;
+    animation-iteration-count: infinite;
+    background-image: url("../assets/mail.png");
+    width: 49px;
+    height: 34px;
+    transition: 0s;
+    margin-top: 27px;
+}
+
+#mailbox {
+    height: 99px;
+    width: 99px;
+    margin: auto;
+    margin-right: -1px;
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+
+#mailbox:hover {
+    border: 3px solid white;
+}
+
+.mailbox-descriptor {
+    margin-left: auto;
+    margin-right: 1px;
+}
+
+@keyframes slide {
+    to {
+        transform: translateX(100%) rotate(360deg);
+        display: none;
+    }
+}
