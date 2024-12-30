@@ -1,11 +1,15 @@
+// start variables
+let angle = 0;
+
+// functions
 function load() {}
 
-let position = 0;
 function rotate(element) {
-    position += 90;
-    element.style.transform = `rotate(${position}deg)`;
+    angle += 90; // angle will loop back to 360 every 4 clicks
+    element.style.transform = `rotate(${angle}deg)`;
 }
 
+// functions to run when page is loaded
 let el = document.getElementById("heading-icon");
 el.addEventListener("click", function () {
     rotate(el);

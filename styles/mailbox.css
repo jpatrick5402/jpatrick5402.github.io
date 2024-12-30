@@ -6,15 +6,15 @@
 
 #mailbox {
     animation: wiggle 2.5s infinite;
-    height: 99px;
-    width: 99px;
     margin: auto;
-    margin-right: -1px;
-    border: 3px solid rgba(0, 0, 0, 0);
+    width: fit-content;
+    margin-right: 0px;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 #mailbox:hover {
-    border: 3px solid white;
+    background-color: #929292;
 }
 
 .mailbox-descriptor {
