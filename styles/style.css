@@ -112,11 +112,7 @@ body {
     border-radius: 10px;
 }
 
-.project-item p {
-    height: 100px;
-}
-
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     .line-item {
         flex-direction: column;
     }
@@ -143,5 +139,10 @@ body {
 
     .project-showcase {
         flex-direction: column;
+        margin: auto;
+    }
+
+    .project-item {
+        max-width: 1200px;
     }
 }
