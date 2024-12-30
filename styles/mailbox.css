@@ -1,21 +1,11 @@
 .mail-animation {
-    display: flex;
-    flex-direction: row;
+    display: block;
     margin: auto;
     max-width: 1200px;
 }
 
-#letter {
-    animation: slide 3s ease-out forwards;
-    animation-iteration-count: infinite;
-    background-image: url("../assets/mail.png");
-    width: 49px;
-    height: 34px;
-    transition: 0s;
-    margin-top: 27px;
-}
-
 #mailbox {
+    animation: wiggle 2.5s infinite;
     height: 99px;
     width: 99px;
     margin: auto;
@@ -28,13 +18,26 @@
 }
 
 .mailbox-descriptor {
+    max-width: 1200px;
     margin-left: auto;
     margin-right: 1px;
+    text-align: right;
 }
 
-@keyframes slide {
-    to {
-        transform: translateX(100%) rotate(360deg);
-        display: none;
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+    80% {
+        transform: rotate(0deg);
+    }
+    85% {
+        transform: rotate(10deg);
+    }
+    95% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
     }
 }
