@@ -5,6 +5,11 @@ body {
     text-align: center;
 }
 
+:any-link {
+    text-decoration: none;
+    color: white;
+}
+
 .mainbox {
     max-width: 1200px;
     margin: auto;
@@ -47,7 +52,6 @@ body {
     border-radius: 10px;
     font-size: 30px;
     padding: 8px;
-    text-decoration: none;
 }
 
 .page-link:hover {
@@ -68,9 +72,12 @@ body {
 
 .line-item p {
     font-size: 20px;
-    margin: auto 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin: auto;
+    padding: 10px;
+}
+
+.line-item a {
+    text-decoration: underline;
 }
 
 .line-item img {
@@ -80,6 +87,33 @@ body {
     width: 150px;
     height: 150px;
     margin: 10px;
+}
+
+.project-showcase {
+    display: flex;
+    gap: 10px;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.project-item {
+    font-size: 16px;
+    max-width: 400px;
+    background-color: #454545;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.project-item:hover {
+    background-color: #929292;
+}
+
+.project-item img {
+    border-radius: 10px;
+}
+
+.project-item p {
+    height: 100px;
 }
 
 @media (max-width: 600px) {
@@ -105,5 +139,9 @@ body {
 
     .heading-icon {
         margin: 10px auto;
+    }
+
+    .project-showcase {
+        flex-direction: column;
     }
 }
