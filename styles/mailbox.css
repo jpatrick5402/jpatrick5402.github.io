@@ -1,15 +1,18 @@
 .mail-animation {
-    display: block;
+    backdrop-filter: blur(10px);
+    background: rgba(45, 45, 45, .7);
+    display: flex;
     margin: auto;
     max-width: 1200px;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 #mailbox {
     animation: wiggle 2.5s infinite;
     margin: auto;
     width: fit-content;
-    margin-right: 0px;
-    border-radius: 10px;
     padding: 10px;
 }
 
@@ -19,24 +22,25 @@
 
 .mailbox-descriptor {
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: 1px;
-    text-align: right;
 }
 
 @keyframes wiggle {
     0% {
         transform: rotate(0deg);
     }
+
     80% {
         transform: rotate(0deg);
     }
+
     85% {
         transform: rotate(10deg);
     }
+
     95% {
         transform: rotate(-10deg);
     }
+
     100% {
         transform: rotate(0deg);
     }

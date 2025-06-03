@@ -1,5 +1,7 @@
 body {
     background-color: #2c2c2c;
+    background-image: url("../assets/forest.jpg");
+    background-size: cover;
     color: white;
     font-family: "Courier New", Courier, monospace;
     text-align: center;
@@ -16,7 +18,8 @@ body {
 }
 
 .heading {
-    background-color: #929292;
+    backdrop-filter: blur(10px);
+    background: rgba(92, 92, 92, .7);
     display: flex;
     border-radius: 10px;
     margin-top: 10px;
@@ -33,15 +36,15 @@ body {
 }
 
 .title {
-    text-align: center;
     margin: auto;
     border-radius: 10px;
     white-space: nowrap;
 }
 
 .page-links {
+    backdrop-filter: blur(10px);
+    background: rgba(45, 45, 45, .70);
     display: flex;
-    background-color: #454545;
     border-radius: 10px;
 }
 
@@ -50,6 +53,7 @@ body {
     background-color: #2c2c2c;
     margin: 10px auto;
     border-radius: 10px;
+    border: 1px solid white;
     font-size: 30px;
     padding: 8px;
 }
@@ -59,7 +63,8 @@ body {
 }
 
 .line-item {
-    background-color: #454545;
+    backdrop-filter: blur(10px);
+    background: rgba(45, 45, 45, .70);
     display: flex;
     border-radius: 10px;
     gap: 10px;
@@ -97,9 +102,10 @@ body {
 }
 
 .project-item {
+    backdrop-filter: blur(10px);
+    background: rgba(45, 45, 45, .70);
     font-size: 16px;
     max-width: 400px;
-    background-color: #454545;
     border-radius: 10px;
     padding: 10px;
 }
